@@ -1,38 +1,421 @@
-.App {
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+:root{
+  --primaryColor:#1e88e9;
+  --secColor: #202020;
+}
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
+}
+                    /* NAVIGATION PART START  */
+.navbar-expand-lg .navbar-collapse{
+  justify-content: flex-end;
+}
+.nav-wrapper{
+  width:100%;
+  z-index: 5;
+  position: fixed;
+}
+.navbar-expand-lg{
+  padding:.8rem 0!important;
+}
+.color-none{
+  background-color: initial;
+  transition: .4s;
+  display: block;
+}
+.color-white{
+  background-color: rgba(255, 255, 255);
+  transition: .4s;
+  box-shadow: 0px 1px 6px 1px #4a787878
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+  color:#222;
+  line-height: 35px;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  padding:.4rem .6rem;
+  margin-right:.7rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:after{
+  content: '';
+  position: absolute;
+  height:1.2px;
+  width:0;
+  background-color:#1e88e9 ;
+  bottom:3px;
+  left:7px;
+  transition: .3s;
+  text-align: left;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+  color:var(--primaryColor)
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover:after{
+  width:84%;
+}
+.active-menu{
+  color:var(--primaryColor)!important
+}
+.active-menu:after{
+  content: '';
+  color:#1e88e9;
+  position: absolute;
+  height:1.2px;
+  width: 84% !important;;
+  background-color:#1e88e9 ;
+  bottom:3px;
+  left:7px;
+  transition: .3s;
+  text-align: left;
+}
+.logo img:first-child{
+  width:7rem;
+}
+.logo img:last-child{
+  width:2rem;
+  height:2rem;
+}
+                              /* HEADER PART START  */
+.header{
+  background-color: #F6F6F6;
+  background: url('./images/liquid-cheese.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.header-wrapper{
+  padding-top:5.5rem;
+}
+.typeing-text{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 3.4rem;
+  font-weight: 400;
+  line-height: 65px;
+  color:#222;
+}
+.resume-button{
+  background-color:var(--primaryColor)!important;
+  color: #fff!important;
+    border-radius: 3px!important;
+    padding: 12px 35px!important;
+    min-width: 120px;
+    font-weight: 600!important;
+}
+.resume-button:hover{
+  box-shadow: rgb(2, 45, 91,.3) 0px 19px 38px, rgb(2, 45, 91,.3) 0px 15px 12px;
+  transition: .3s;
+}
+.header-info-wrapper{
+  margin-top:3rem;
+  padding:3rem 0;
+}
+.header-info-wrapper .my-name{
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color:rgb(93, 90, 90)
+}
+.header-info-wrapper .typeing-text{
+  margin-bottom:2rem;
+}
+.header-info-wrapper .header-my-info{
+  font-size: 18px;
+    line-height: 2em;
+    margin-top: 0;
+    font-weight: 400;
+    margin-bottom:2rem;
+}
+.header-right-side{
+  position: relative;
+  min-height: 88vh;
+}
+.header-picture-wrapper{
   text-align: center;
 }
+.header-picture-wrapper .mahmud-img{
+  position: absolute;
+  bottom: 0;
+  height:400px;
+  right:10%;
+  z-index: 2;
+}
+#shape1{
+  position: absolute;
+  bottom:0%;
+  right:10%;
+  width:330px;
+}
+#shape3{
+  position: absolute;
+  top: 0%;
+  right:2%;
+  animation:spin 8s linear infinite;
+}
+@-moz-keyframes spin { 
+  100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+  100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+  100% { 
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg); 
+  } 
+}
+#shape4{
+  position: absolute;
+  top: 40%;
+  left:0%;
+}
+                          /* HEADER PART END  */
+                          /* ABOUT PART START  */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about-wrapper{
+  background: url('./images/Shiny\ Overlay.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.my-info-wrapper p{
+  color:var(--primaryColor);
+  font-size: 14px;
+  font-weight: 600;
+}
+.my-info-wrapper h2{
+  font-weight: 400;
+  letter-spacing: normal;
+  margin-bottom: 20px;
+  font-size: 40px;
+  color:#fff;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.my-info p{
+  font-size: 16px;
+  font-weight: 400;
+  color:#999;
+}
+.my-info p span{
+  font-weight: 700;
+  color:rgb(205, 199, 199)
+}
+.skill-percent{
+  margin-top:1.5rem;
+}
+.skill-percent div{
+  color:#fff;
+  justify-content: space-between;
+}
+.skill-percent div h5{
+  font-size: 15px;
+  font-weight: 500;
+}
+.skill-percent div p{
+  font-size: 15px;
+  font-weight: 500;
+  color:#999
+}
+.progress{
+  height: 4px !important;
+  background-color: #333!important;
+}
+.progress-bar{
+  background: linear-gradient(to right, #1e88e9 0%,#72d5f4 100%);
+}
+                      /* ABOUT PART END         */
+                      /* SERVICES PART START  */
+.section-padding{
+  padding:6.4rem 0;
+}
+#Services{
+  background: url("./images/Shiny\ Overlay\ -1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide-show{
+  margin:1.5rem .5rem;
+}
+.single-slide{
+  padding:0.5rem;
+}
+.service-section h2{
+  color:#333
+}
+.single-slider-wrapper{
+  border-radius: 15px;
+  padding:2.2rem 1rem 1rem 1rem;
+}
+.single-slider-wrapper:hover{
+  background:linear-gradient(35deg, #439be7,#82c3fb, #9cdef8);
+  transition: 5s!important;
+}
+.single-slider-wrapper:hover svg{
+  color: #fff!important;
+  transform: 5s;
+}
+.slick-prev, .slick-next{
+  display: none!important;
+}
+.slick-dots li button:before{
+  font-size: 10px!important;
+  color:var(--primaryColor)!important;
+}
+.single-slider-wrapper svg{
+  color:var(--primaryColor);
+  font-size: 40px;
+  margin-bottom:40px;
+}
+.single-slider-wrapper h3{
+  font-weight: bold;
+    font-size: 19px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color:#555
+}
+.single-slider-wrapper p{
+  font-weight: 400;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color:#555
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+                            /* SERVICES SECTION END  */
+                            /* PORTFOLIO PART START  */
+#Portfolio{
+  background: url('./images/Shiny\ Overlay.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.single-portfolio-wrapper{
+  position: relative;
+  border-radius: 8px;
+  margin-top:1.6rem;
+  border-radius: 15px;
+}
+.portfolio-title{
+  margin-bottom:2rem;
+}
+.single-portfolio-title{
+  position: absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+  background:linear-gradient(35deg, rgb(67, 155, 231),rgb(130, 195, 251), rgb(156, 221, 247));
+  opacity: 0;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border-radius: 7px;
+}
+.single-portfolio-img img{
+  height:215px;
+  width:100%;
+  border-radius: 7px;
+}
+.single-portfolio-wrapper:hover .single-portfolio-title{
+  opacity: 1;
+  transition: .4s;
+}
+.single-portfolio-title h3{
+  font-size: 16px;
+  color:#eceff3;
+  font-weight: 700;
+}
+                        /* PORTFOLIO PART END  */
+                        /* EXPERIENCES PART START  */
+#Experiences{
+  background: url("./images/Shiny\ Overlay\ -2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.experiences-single-details{
+  padding:1.5rem;
+}
+.experiences-heading h2{
+  color: #333 !important;;
+}
+.experiences-single-details .experiences-date{
+  border:2px solid var(--primaryColor);
+  display: inline-block;
+  padding:5px 10px;
+  font-weight: 600;
+  color:var(--primaryColor);
+  margin-bottom:1.6rem;
+  border-radius: 4px;
+}
+.experiences-single-details .experiences-date p{
+  margin-bottom:0;
+}
+.experiences-single-details h3{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color:#333;
+  margin-bottom:1.2rem;
+}
+.details-part{
+  font-size: 15px;
+  font-weight: 500;
+  color:#555
 }
 
-.App-link {
-  color: #61dafb;
+                        /* EXPERIENCES PART END  */
+                        /* CONTECT PART START */
+
+#Contact{
+  background: url("./images/Shiny\ Overlay.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.contect-section{
+  padding:5rem 0 3rem 0;
+}
+.contact-part svg {
+  color:#fff;
+  margin-left:1rem;
+}
+.under-contact-info h3{
+  font-size: 18px;
+  font-weight: 400;
+  color:rgb(234, 229, 229)
+}
+.last-line{
+  color:rgb(234, 229, 229);
+  font-size: 20px;
+}
+.social-media{
+  justify-content: center;
+  margin: 2rem 0;
+}
+.social-media a svg{
+  font-size: 2rem;
+  color:#F6F6F6;
+}
+.social-media a svg:hover{
+  color:#8481FF
+}
+.social-media .icon{
+  margin:0 .7rem
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+
+
+
+
+

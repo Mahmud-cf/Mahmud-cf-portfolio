@@ -1,0 +1,301 @@
+@media only screen and (max-width:1200px){
+    #shape4 {
+        width:2rem;   
+    }
+}
+@media only screen and (min-width:768px) and (max-width:992px){
+    #shape4 {
+        width:2rem;   
+    }
+    #shape3{
+        right:50%;
+    }
+    .nav-wrapper{
+        position: initial!important;
+    }
+    .header-wrapper{
+        padding-top:3rem;
+    }
+    .header-info-wrapper .typeing-text{
+        font-size: 2.7rem;
+    }
+    .header-right-side{
+        height: auto !important;;
+    }
+    .section-padding{
+        padding:5rem 0;
+    }
+    .header-info-wrapper .header-my-info{
+        font-size: 16px;
+        line-height: 1.9em;
+    }
+    .header-picture-wrapper .mahmud-img{
+        right:-5%;
+        bottom:0%;
+        height:350px;
+    }
+     #shape1{
+        right:-10%;
+        bottom:0%;
+        height:280px;
+    }
+    .my-info p{
+        font-size: 15px;
+    }
+ } 
+@media only screen and (min-width:576px) and (max-width:767px){
+    #shape4 {
+        width:2rem;   
+    }
+    #shape3{
+        right:50%;
+    }
+    .nav-wrapper{
+        position: initial!important;
+    }
+    .header-wrapper{
+        padding-top:1rem;
+    }
+    .header-info-wrapper .typeing-text{
+        font-size: 2.7rem;
+    }
+    .header-right-side{
+        min-height:24rem;
+    }
+    .header-info-wrapper{
+        padding:1rem 0;
+    }
+    .my-info-wrapper h2{
+        font-size: 36px;
+    }
+    .my-info-wrapper p{
+        font-size: 13px;
+    }
+    .single-slider-wrapper h3{
+        font-size: 17px;
+        margin-bottom:13px;
+    }
+    .single-slider-wrapper p{
+        font-size: 13px;
+    }
+    .single-portfolio-img img{
+        height:180px;
+    }
+    .single-slider-wrapper svg{
+        margin-bottom:25px;
+    }
+    .single-slider-wrapper{
+        padding:1.178rem 1rem; 
+    }
+    .section-padding{
+        padding:5rem 0;
+    }
+    .header-info-wrapper .header-my-info{
+        font-size: 15px;
+        line-height: 1.9em;
+    }
+    .header-picture-wrapper .mahmud-img{
+        right:20%;
+        bottom:0%;
+        height:350px;
+        width:auto;
+    }
+     #shape1{
+        right:15%;
+        bottom:0%;
+        height:250px;
+    }
+    .my-info p{
+        font-size: 15px;
+    }
+ } 
+@media only screen and (min-width:390px) and (max-width:575px){
+    #shape4 {
+        width:2rem;
+        left: calc( 100% - 2rem );
+        transform: rotate(180deg);
+        top:50%;
+    }
+    #shape3{
+        right:25%;
+        top:9%;
+    }
+    .nav-wrapper{
+        position: initial!important;
+    }
+    .header-wrapper{
+        padding-top:1rem;
+    }
+    .header-info-wrapper .typeing-text{
+        font-size: 2.25rem;
+        margin-bottom:1.3rem;
+    }
+    .header-right-side{
+        min-height:24rem;
+    }
+    .header-info-wrapper{
+        padding:1rem 0;
+        margin-top:1.4rem;
+    }
+    .resume-button{
+        padding:10px 28px!important;
+    }
+    .my-info-wrapper h2{
+        font-size: 32px;
+    }
+    .my-info-wrapper p{
+        font-size: 13px;
+    }
+    .single-slider-wrapper h3{
+        font-size: 16px;
+        margin-bottom:10px;
+    }
+    .single-slider-wrapper p{
+        font-size: 12px;
+    }
+    .single-portfolio-img img{
+        height:180px;
+    }
+    .single-slider-wrapper svg{
+        margin-bottom:17px;
+    }
+    .single-slider-wrapper{
+        padding:1rem 0.3rem; 
+    }
+    .section-padding{
+        padding:5rem 0;
+    }
+    .header-info-wrapper .my-name{
+        font-size: 13px;
+    }
+    .header-info-wrapper .header-my-info{
+        font-size: 15px;
+        line-height: 1.7em;
+    }
+    .header-picture-wrapper .mahmud-img{
+        right:20%;
+        bottom:0%;
+        height:350px;
+    }
+     #shape1{
+        right:15%;
+        bottom:0%;
+        height:250px;
+        width:auto;
+    }
+    .my-info p{
+        font-size: 15px;
+        text-align: justify;
+    }
+    .experiences-single-details .experiences-date p{
+        font-size: 14px;
+    }
+    .experiences-single-details h3{
+        font-size: 18px;
+    }
+    .details-part{
+        font-size: 14px;
+    }
+    .under-contact-info h3{
+        font-size: 17px;
+    }
+    .last-line{
+        font-size: 19px
+    }
+ } 
+@media only screen and (max-width:390px){
+    #shape4 {
+        width:2rem;
+        left: calc( 100% - 2rem );
+        transform: rotate(180deg);
+        top:50%;
+    }
+    #shape3{
+        right:25%;
+        top:9%;
+    }
+    .nav-wrapper{
+        position: initial!important;
+    }
+    .header-wrapper{
+        padding-top:1rem;
+    }
+    .header-info-wrapper .typeing-text{
+        font-size: 2.25rem;
+        margin-bottom:1.3rem;
+    }
+    .header-right-side{
+        min-height:24rem;
+    }
+    .header-info-wrapper{
+        padding:1rem 0;
+        margin-top:1.4rem;
+    }
+    .resume-button{
+        padding:10px 28px!important;
+    }
+    .my-info-wrapper h2{
+        font-size: 32px;
+    }
+    .my-info-wrapper p{
+        font-size: 13px;
+    }
+    .single-slider-wrapper h3{
+        font-size: 14px;
+        margin-bottom:10px;
+    }
+    .single-slider-wrapper p{
+        font-size: 11px;
+    }
+    .single-portfolio-img img{
+        height:180px;
+    }
+    .single-slider-wrapper svg{
+        margin-bottom:13px;
+        font-size: 33px;
+    }
+    .single-slider-wrapper{
+        padding:1rem 0.3rem; 
+    }
+    .section-padding{
+        padding:5rem 0;
+    }
+    .header-info-wrapper .my-name{
+        font-size: 13px;
+    }
+    .header-info-wrapper .header-my-info{
+        font-size: 15px;
+        line-height: 1.7em;
+    }
+    .header-picture-wrapper .mahmud-img{
+        right:10%;
+        bottom:0%;
+        height:350px;
+    }
+     #shape1{
+        right:5%;
+        bottom:6%;
+        height:225px;
+        width:auto;
+    }
+    .my-info p{
+        font-size: 15px;
+        text-align: justify;
+    }
+    .experiences-single-details .experiences-date p{
+        font-size: 14px;
+    }
+    .experiences-single-details h3{
+        font-size: 18px;
+    }
+    .details-part{
+        font-size: 14px;
+    }
+    .under-contact-info h3{
+        font-size: 17px;
+    }
+    .last-line{
+        font-size: 19px
+    }
+ } 
+ 
